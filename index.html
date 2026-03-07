@@ -7,19 +7,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  --cream:   #FAF7F2;
-  --cream2:  #F2EDE4;
-  --cream3:  #E8E0D2;
-  --amber:   #F5A623;
-  --amber2:  #E8930F;
-  --amber3:  #FFC95F;
-  --charcoal:#1A1A1A;
-  --dark:    #0D0D0D;
-  --mid:     #5A5A5A;
-  --light:   #9A9A9A;
-  --green:   #2D6A4F;
-  --green2:  #40916C;
-  --green3:  #D8F3DC;
+  --cream:   #F4F8F4;
+  --cream2:  #E8F2EA;
+  --cream3:  #D4E8D8;
+  --amber:   #4A9B6F;
+  --amber2:  #2D7A52;
+  --amber3:  #85C99A;
+  --charcoal:#1A2B1E;
+  --dark:    #0D1A10;
+  --mid:     #4A5E4D;
+  --light:   #7A9A7E;
+  --green:   #1B5E38;
+  --green2:  #2D8A5C;
+  --green3:  #C8EDD2;
 
   --serif: 'Playfair Display', Georgia, serif;
   --sans:  'Outfit', sans-serif;
@@ -43,7 +43,7 @@ body {
   position: fixed; top:0; left:0; right:0; z-index:100;
   display: flex; align-items:center; justify-content:space-between;
   padding: 0 4rem; height: 70px;
-  background: rgba(250,247,242,0.92);
+  background: rgba(244,248,244,0.92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--cream3);
   transition: box-shadow 0.3s;
@@ -73,8 +73,8 @@ body {
 .hero-bg {
   position: absolute; inset:0; z-index:0;
   background:
-    radial-gradient(ellipse 80% 60% at 80% 40%, rgba(245,166,35,0.10) 0%, transparent 65%),
-    radial-gradient(ellipse 50% 50% at 20% 80%, rgba(45,106,79,0.07) 0%, transparent 60%);
+    radial-gradient(ellipse 80% 60% at 80% 40%, rgba(74,155,111,0.10) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 50% at 20% 80%, rgba(27,94,56,0.07) 0%, transparent 60%);
 }
 
 /* Decorative circles */
@@ -82,14 +82,14 @@ body {
   content:'';
   position:absolute; top:10%; right:6%;
   width:420px; height:420px; border-radius:50%;
-  border: 1px solid rgba(245,166,35,0.15);
+  border: 1px solid rgba(74,155,111,0.15);
   animation: spin-slow 40s linear infinite;
 }
 .hero-bg::after {
   content:'';
   position:absolute; top:18%; right:14%;
   width:280px; height:280px; border-radius:50%;
-  border: 1px solid rgba(245,166,35,0.22);
+  border: 1px solid rgba(74,155,111,0.22);
   animation: spin-slow 28s linear infinite reverse;
 }
 @keyframes spin-slow { to { transform: rotate(360deg); } }
@@ -220,7 +220,7 @@ section.dark-section { background:var(--charcoal); color:#fff; }
   width:130px; height:130px; border-radius:50%;
   background:linear-gradient(135deg, var(--amber), var(--amber2));
   display:flex; flex-direction:column; align-items:center; justify-content:center;
-  box-shadow:0 8px 32px rgba(245,166,35,0.35);
+  box-shadow:0 8px 32px rgba(74,155,111,0.35);
   font-family:var(--serif); font-size:0.85rem; font-weight:700; color:#000;
   text-align:center; line-height:1.2; z-index:2;
 }
@@ -264,7 +264,7 @@ section.dark-section { background:var(--charcoal); color:#fff; }
   background:var(--amber); color:#000;
   display:flex; align-items:center; justify-content:center;
   font-weight:700; font-size:0.85rem; font-family:var(--sans);
-  box-shadow:0 4px 12px rgba(245,166,35,0.3); z-index:1;
+  box-shadow:0 4px 12px rgba(74,155,111,0.3); z-index:1;
 }
 .step-content { padding-top:0.4rem; }
 .step-title { font-weight:600; font-size:0.95rem; color:var(--dark); margin-bottom:0.3rem; }
@@ -392,7 +392,7 @@ section.dark-section { background:var(--charcoal); color:#fff; }
   background:linear-gradient(135deg, var(--amber), var(--amber2));
   display:flex; align-items:center; justify-content:center;
   font-family:var(--serif); font-size:1.8rem; font-weight:900; color:#000;
-  flex-shrink:0; border:3px solid rgba(245,166,35,0.3);
+  flex-shrink:0; border:3px solid rgba(74,155,111,0.3);
 }
 .founder-name { font-family:var(--serif); font-size:1.4rem; font-weight:700; color:#fff; line-height:1.2; }
 .founder-role { font-size:0.78rem; color:var(--amber3); font-weight:600; letter-spacing:1px; text-transform:uppercase; margin-top:0.3rem; }
@@ -746,7 +746,7 @@ footer {
       </div>
     </div>
     <div style="text-align:center;">
-      <div style="background:rgba(245,166,35,0.08);border:1px solid rgba(245,166,35,0.2);border-radius:20px;padding:3rem 2rem;">
+      <div style="background:rgba(74,155,111,0.08);border:1px solid rgba(74,155,111,0.2);border-radius:20px;padding:3rem 2rem;">
         <div style="font-family:var(--serif);font-size:1rem;color:rgba(255,255,255,0.5);margin-bottom:0.5rem;">ESTIMATED ANNUAL CREDITS</div>
         <div style="font-family:var(--serif);font-size:4rem;font-weight:900;color:var(--amber3);line-height:1;">50,000+</div>
         <div style="font-size:0.85rem;color:rgba(255,255,255,0.4);margin-top:0.4rem;">tCO₂e per 10,000 tonnes processed</div>
@@ -1004,7 +1004,7 @@ footer {
         <div class="contact-item">
           <div class="contact-item-label">Email Us</div>
           <div class="contact-item-value">
-            <a href="mailto:cosimoinnovations@gmail.com">cosimoinnovations@gmail.com</a>
+            <a href="/cdn-cgi/l/email-protection#b6d5d9c5dfdbd9dfd8d8d9c0d7c2dfd9d8c5f6d1dbd7dfda98d5d9db"><span class="__cf_email__" data-cfemail="90f3ffe3f9fdfff9fefeffe6f1e4f9fffee3d0f7fdf1f9fcbef3fffd">[email&#160;protected]</span></a>
           </div>
         </div>
         <div class="contact-divider"></div>
@@ -1022,7 +1022,7 @@ footer {
         </div>
         <div class="contact-divider"></div>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;">
-          <a href="mailto:cosimoinnovations@gmail.com" class="btn-fill amber" style="text-decoration:none;font-size:0.85rem;padding:0.7rem 1.6rem;">Send Email →</a>
+          <a href="/cdn-cgi/l/email-protection#22414d514b4f4d4b4c4c4d5443564b4d4c5162454f434b4e0c414d4f" class="btn-fill amber" style="text-decoration:none;font-size:0.85rem;padding:0.7rem 1.6rem;">Send Email →</a>
           <a href="https://www.linkedin.com/in/shivesh-raj-3258a8216" target="_blank" class="btn-outline" style="text-decoration:none;font-size:0.85rem;padding:0.7rem 1.6rem;border-color:rgba(255,255,255,0.2);color:#fff;">LinkedIn ↗</a>
         </div>
         <p class="contact-form-note">We typically respond within 24 hours on business days.</p>
@@ -1041,7 +1041,7 @@ footer {
   <span class="footer-tagline">Closing the Loop on Li-ion Batteries · Made in India 🇮🇳</span>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Scrolled nav shadow
 window.addEventListener('scroll', () => {
   document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 20);
@@ -1065,12 +1065,4 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.fact-card, .stat-showcase-card, .vision-card, .founder-card, .carbon-card, .impact-item, .process-step').forEach((el, i) => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = `opacity 0.6s ease ${i * 0.06}s, transform 0.6s ease ${i * 0.06}s`;
-  observer.observe(el);
-});
-</script>
-</body>
-</html>
+document.querySelectorAll('.fact-card, .stat-showcase-card,
